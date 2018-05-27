@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 
+
 Route::get('tasks','tasksController@show')->middleware('auth');
 
 Auth::routes();

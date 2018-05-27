@@ -10,9 +10,12 @@
 </head>
 <body>    
 <div>
-<li>
-Title:{{$task->title}}
-</li>
+
+@foreach ($tasks as $task)
+<ul>
+<li>{{$task->title}}</li>
+</ul>
+@endforeach
 </div>
 
 </body>
